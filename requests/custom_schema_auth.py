@@ -1,3 +1,5 @@
+# custom schemas for auth is not recommended unless needed
+
 import requests
 from requests.auth import AuthBase
 
