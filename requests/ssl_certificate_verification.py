@@ -1,5 +1,5 @@
 import requests
 
 
-response = requests.get('https://api.github.com', verify=False)
+response = requests.get('https://api.github.com', verify=True)
 print(response)
