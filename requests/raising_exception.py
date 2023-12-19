@@ -1,11 +1,11 @@
 # raising exception if the response was unsuccessful
-import requests
 from requests.exceptions import HTTPError
+from security import safe_requests
 
 
 for url in ['https://api.github.com', 'https://api.github.com/invalid']:
     try:
-        response = requests.get(url)
+        response = safe_requests.get(url)
 
         # if the response is successful, No exception is raised
         response.raise_for_status()
