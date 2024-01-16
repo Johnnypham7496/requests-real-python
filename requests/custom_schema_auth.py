@@ -15,4 +15,4 @@ class TokenAuth(AuthBase):
         return r
 
 
-requests.get('https://httpbin.org/get', auth=TokenAuth('12345abcde-token'))
+requests.get('https://httpbin.org/get', auth=TokenAuth('12345abcde-token'), timeout=60)

@@ -1,7 +1,7 @@
 import requests
 
 
-response = requests.get('http://api.github.com')
+response = requests.get('http://api.github.com', timeout=60)
 print(response.content)
 print()
 

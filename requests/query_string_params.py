@@ -5,8 +5,8 @@ import requests
 response = requests.get(
     'http://api.github.com/search/repositories',
     params= {'q': 'requests+language:python'},
-    headers={'Accept': 'application/vnd.github.v3.text-match+json'}
-    )
+    headers={'Accept': 'application/vnd.github.v3.text-match+json'}, 
+    timeout=60)
 
 print(response)
 

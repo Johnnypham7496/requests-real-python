@@ -2,7 +2,7 @@
 import requests
 
 
-response = requests.post('https://httpbin.org/post', json={'key':'value'})
+response = requests.post('https://httpbin.org/post', json={'key':'value'}, timeout=60)
 response.request.headers['Content-Type']
 
 print(response.request.url)

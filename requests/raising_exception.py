@@ -5,7 +5,7 @@ from requests.exceptions import HTTPError
 
 for url in ['https://api.github.com', 'https://api.github.com/invalid']:
     try:
-        response = requests.get(url)
+        response = requests.get(url, timeout=60)
 
         # if the response is successful, No exception is raised
         response.raise_for_status()
